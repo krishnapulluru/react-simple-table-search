@@ -1,38 +1,66 @@
-.App {
+.app {
+  width: 400px;
+  border :none;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgb(210, 210, 210);
+}
+
+.search-box {
+  padding: 10px;
+  border : 2px solid #45bee7;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #45bee7 ;
+}
+
+.search-box input[type='search'] {
+  width: 100%;
+  border : 1px solid #d2cfcf;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.search-box input[type='checkbox'] , .search-box label {
+  margin-top: 5px;
+}
+
+.search-box label {
+ color: #838080;
+}
+
+.product-table{
+  margin : 15px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table thead tr , .product-table thead td  {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-table thead tr th {
+  background-color: #e79345;
+  font-weight: 900;
+  color: #fff;
+  padding: 5px;
+  border : 1px solid rgb(5, 5, 5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-heading{
+  background-color: #c0f2bb;
+  border: 1px solid #1b1b1b ;
+  padding: 5px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.product-table tbody tr td {
+  padding: 5px;
+  font-weight: bold;
+  border : 1px solid #2b2b2b;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-table tbody tr td:last-child{
+  text-align: center;
 }
